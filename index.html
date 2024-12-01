@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar & Yutitzi - Nuestro Amor</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+</head>
+<body>
+    <!-- User Select Modal -->
+    <div id="userSelectModal" class="modal">
+        <div class="modal-content">
+            <h2>¿Quién eres?</h2>
+            <div class="button-group">
+                <button onclick="selectUser('Oscar')">Oscar</button>
+                <button onclick="selectUser('Yutitzi')">Yutitzi</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="heart-icon">❤️</div>
+            <h1>Oscar & Yutitzi</h1>
+            <p>Celebrando Nuestro Amor</p>
+            <button onclick="scrollToSection('story')" class="primary-button">
+                Nuestra Historia
+            </button>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section id="story" class="story">
+        <h2>Nuestra Historia de Amor</h2>
+        <div class="memory-cards">
+            <div class="memory-card">
+                <div class="icon">🕐</div>
+                <h3>Primer Encuentro</h3>
+                <p>El día que nuestros caminos se cruzaron por primera vez</p>
+            </div>
+            <div class="memory-card">
+                <div class="icon">📍</div>
+                <h3>Primera Cita</h3>
+                <p>Un momento mágico que marcó el inicio de nuestra historia</p>
+            </div>
+            <div class="memory-card">
+                <div class="icon">📅</div>
+                <h3>Nuestro Aniversario</h3>
+                <p>Celebrando otro año de amor y felicidad juntos</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <h2>Momentos Especiales</h2>
+        <div class="photo-grid">
+            <div class="photo-card">
+                <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=800&q=80" alt="Momento 1">
+            </div>
+            <div class="photo-card">
+                <img src="https://images.unsplash.com/photo-1529634597503-139d3726fed5?auto=format&fit=crop&w=800&q=80" alt="Momento 2">
+            </div>
+            <div class="photo-card">
+                <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=800&q=80" alt="Momento 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Diary Section -->
+    <section class="diary">
+        <h2>Nuestro Diario de Amor</h2>
+        <p class="subtitle">Comparte tus pensamientos y sentimientos</p>
+        
+        <form id="diaryForm" class="diary-form">
+            <div class="input-group">
+                <input type="text" id="diaryEntry" placeholder="Escribe tu mensaje...">
+                <button type="submit" class="primary-button">Enviar</button>
+            </div>
+        </form>
+
+        <div id="entriesList" class="entries-list">
+            <!-- Diary entries will be inserted here -->
+        </div>
+    </section>
+
+    <!-- Message Section -->
+    <section class="message">
+        <button onclick="toggleMessage()" class="primary-button">
+            ❤️ Mensaje Especial
+        </button>
+        <div id="specialMessage" class="special-message hidden">
+            <p>"Cada día a tu lado es un regalo. Gracias por llenar mi vida de amor y felicidad.
+               Este es solo el comienzo de nuestra hermosa historia juntos."</p>
+            <p class="signature">Con amor, Oscar</p>
+        </div>
+    </section>
+
+    <script src="js/store.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
